@@ -1,0 +1,68 @@
+Paciente ID 9600008 tempo ocioso: 0 estado: 1
+Paciente ID 9600009 tempo ocioso: 0 estado: 1
+Paciente ID 9600010 tempo ocioso: 0 estado: 1
+Paciente ID 9600011 tempo ocioso: 0 estado: 1
+Paciente ID 9600012 tempo ocioso: 0 estado: 1
+Paciente ID 9600008 tempo ocioso: 0 estado: 3
+Paciente ID 9600009 tempo ocioso: 0 estado: 3
+Paciente ID 9600010 tempo ocioso: 0.2 estado: 3
+Paciente ID 9600011 tempo ocioso: 0.2 estado: 3
+Paciente ID 9600012 tempo ocioso: 0.4 estado: 3
+Paciente ID 9600008 tempo ocioso: 0 estado: 5
+Paciente ID 9600009 tempo ocioso: 0 estado: 5
+Paciente ID 9600009 tempo ocioso: 0 estado: 7
+Paciente ID 9600013 tempo ocioso: 0 estado: 1
+Paciente ID 9600015 tempo ocioso: 0 estado: 1
+Paciente ID 9600016 tempo ocioso: 0 estado: 1
+Paciente ID 9600009 tempo ocioso: 0 estado: 9
+Paciente ID 9600008 tempo ocioso: 0 estado: 7
+Paciente ID 9600010 tempo ocioso: 0.5 estado: 5
+Paciente ID 9600011 tempo ocioso: 0.5 estado: 5
+Paciente ID 9600013 tempo ocioso: 0 estado: 3
+Paciente ID 9600015 tempo ocioso: 0 estado: 3
+Paciente ID 9600016 tempo ocioso: 0.2 estado: 3
+Paciente ID 9600010 tempo ocioso: 0.5 estado: 7
+Paciente ID 9600010 tempo ocioso: 0.5 estado: 9
+Paciente ID 9600012 tempo ocioso: 1 estado: 5
+Paciente ID 9600013 tempo ocioso: 0 estado: 5
+Paciente ID 9600012 tempo ocioso: 1 estado: 7
+Paciente ID 9600017 tempo ocioso: 0 estado: 1
+Paciente ID 9600018 tempo ocioso: 0 estado: 1
+Paciente ID 9600012 tempo ocioso: 1 estado: 9
+Paciente ID 9600015 tempo ocioso: 0.5 estado: 5
+Paciente ID 9600016 tempo ocioso: 0.5 estado: 5
+Paciente ID 9600017 tempo ocioso: 0 estado: 3
+Paciente ID 9600018 tempo ocioso: 0 estado: 3
+Paciente ID 9600010 tempo ocioso: 0.5 estado: 11
+Paciente ID 9600011 tempo ocioso: 0.5 estado: 7
+Paciente ID 9600016 tempo ocioso: 0.5 estado: 7
+Paciente ID 9600017 tempo ocioso: 0 estado: 5
+Paciente ID 9600018 tempo ocioso: 0 estado: 5
+Paciente ID 9600018 tempo ocioso: 0 estado: 7
+Paciente ID 9600010 tempo ocioso: 0.5 estado: 13
+Paciente ID 9600008 tempo ocioso: 0 estado: 9
+Paciente ID 9600009 tempo ocioso: 0 estado: 11
+Paciente ID 9600016 tempo ocioso: 1.15 estado: 9
+Paciente ID 9600011 tempo ocioso: 0.5 estado: 9
+Paciente ID 9600018 tempo ocioso: 1.15 estado: 9
+Paciente ID 9600008 tempo ocioso: 0.2 estado: 11
+Paciente ID 9600009 tempo ocioso: 0 estado: 13
+Paciente ID 9600016 tempo ocioso: 1.65 estado: 11
+Paciente ID 9600012 tempo ocioso: 1.6 estado: 11
+Paciente ID 9600016 tempo ocioso: 1.65 estado: 13
+Paciente ID 9600012 tempo ocioso: 1.85 estado: 13
+Paciente ID 9600011 tempo ocioso: 1.45 estado: 11
+Paciente ID 9600018 tempo ocioso: 2.9 estado: 11
+Paciente ID 9600008 tempo ocioso: 0.2 estado: 13
+Paciente ID 9600011 tempo ocioso: 1.45 estado: 13
+Paciente ID 9600018 tempo ocioso: 5.25 estado: 13
+9600008 Tue Mar 21 02:00:00 2017 Tue Mar 21 12:03:00 2017 10.05 9.85 0.20
+9600009 Tue Mar 21 02:00:00 2017 Tue Mar 21 06:36:00 2017 4.60 4.60 0.00
+9600010 Tue Mar 21 02:00:00 2017 Tue Mar 21 05:06:00 2017 3.10 2.60 0.50
+9600011 Tue Mar 21 02:00:00 2017 Tue Mar 21 12:27:00 2017 10.45 9.00 1.45
+9600012 Tue Mar 21 02:00:00 2017 Tue Mar 21 08:54:00 2017 6.90 5.05 1.85
+9600013 Tue Mar 21 03:00:00 2017 Tue Mar 21 03:42:00 2017 0.70 0.70 0.00
+9600015 Tue Mar 21 03:00:00 2017 Tue Mar 21 04:12:00 2017 1.20 0.70 0.50
+9600016 Tue Mar 21 03:00:00 2017 Tue Mar 21 08:27:00 2017 5.45 3.80 1.65
+9600017 Tue Mar 21 04:00:00 2017 Tue Mar 21 04:42:00 2017 0.70 0.70 0.00
+9600018 Tue Mar 21 04:00:00 2017 Tue Mar 21 12:36:00 2017 8.60 3.35 5.25

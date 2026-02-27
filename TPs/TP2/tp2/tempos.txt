@@ -1,0 +1,55 @@
+tempo total
+
+100 pacientes Tempo de execução: 0.046875 segundos
+200 pacientes Tempo de execução: 0.031250 segundos
+300 pacientes Tempo de execução: 0.062500 segundos
+400 pacientes Tempo de execução: 0.156250 segundos
+500 pacientes Tempo de execução: 0.250000 segundos
+600 pacientes Tempo de execução: 0.421875 segundos
+700 pacientes Tempo de execução: 0.546875 segundos
+800 pacientes Tempo de execução: 0.984375 segundos
+900 pacientes Tempo de execução: 1.093750 segundos
+1000 pacientes Tempo de execução: 1.406250 segundos
+2000 pacientes Tempo de execução: 14.281250 segundos
+3000 pacientes Tempo de execução: 34.671875 segundos
+4000 pacientes Tempo de execução: 90.937500 segundos
+5000 pacientes Tempo de execução: 179.203125 segundos
+
+só com o heapsort
+
+100 pacientes Tempo de execução: Tempo de execução: 0.000000 segundos
+200 pacientes Tempo de execução: Tempo de execução: 0.000000 segundos
+300 pacientes Tempo de execução: Tempo de execução: 0.000000 segundos
+400 pacientes Tempo de execução: Tempo de execução: 0.000000 segundos
+500 pacientes Tempo de execução: Tempo de execução: 0.000000 segundos
+600 pacientes Tempo de execução: Tempo de execução: 0.000000 segundos
+700 pacientes Tempo de execução: Tempo de execução: 0.000000 segundos
+800 pacientes Tempo de execução: Tempo de execução: 0.000000 segundos
+900 pacientes Tempo de execução: Tempo de execução: 0.000000 segundos
+1000 pacientes Tempo de execução: Tempo de execução: 0.000000 segundos
+2000 pacientes Tempo de execução: Tempo de execução: 0.000000 segundos
+3000 pacientes Tempo de execução: Tempo de execução: 0.000000 segundos
+4000 pacientes Tempo de execução: Tempo de execução: 0.015625 segundos
+5000 pacientes Tempo de execução: Tempo de execução: 0.015625 segundos
+6000 pacientes Tempo de execução: Tempo de execução: 0.015625 segundos
+7000 pacientes Tempo de execução: Tempo de execução: 0.015625 segundos
+8000 pacientes Tempo de execução: Tempo de execução: 0.015625 segundos
+9000 pacientes Tempo de execução: Tempo de execução: 0.015625 segundos
+10000 pacientes Tempo de execução: Tempo de execução: 0.015625 segundos
+
+só a impressão dos dados
+
+100 pacientes Tempo de execução: Tempo de execução: 0.031250 segundos
+200 pacientes Tempo de execução: Tempo de execução: 0.000000 segundos
+300 pacientes Tempo de execução: Tempo de execução: 0.015625 segundos
+400 pacientes Tempo de execução: Tempo de execução: 0.031250 segundos
+500 pacientes Tempo de execução: Tempo de execução: 0.015625 segundos
+600 pacientes Tempo de execução: Tempo de execução: 0.046875 segundos
+700 pacientes Tempo de execução: Tempo de execução: 0.031250 segundos
+800 pacientes Tempo de execução: Tempo de execução: 0.046875 segundos
+900 pacientes Tempo de execução: Tempo de execução: 0.078125 segundos
+1000 pacientes Tempo de execução: Tempo de execução: 0.062500 segundos
+2000 pacientes Tempo de execução: Tempo de execução: 0.171875 segundos
+3000 pacientes Tempo de execução: Tempo de execução: 0.218750 segundos
+4000 pacientes Tempo de execução: Tempo de execução: 0.343750 segundos
+5000 pacientes Tempo de execução: Tempo de execução: 0.421875 segundos

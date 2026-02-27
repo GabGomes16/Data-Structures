@@ -1,0 +1,75 @@
+[DEBUG] Procedimento 0 carregado: Tempo Médio = 0.200000, Número de Unidades = 2
+[DEBUG] Procedimento 1 carregado: Tempo Médio = 0.500000, Número de Unidades = 2
+[DEBUG] Procedimento 2 carregado: Tempo Médio = 0.100000, Número de Unidades = 2
+[DEBUG] Procedimento 3 carregado: Tempo Médio = 0.050000, Número de Unidades = 2
+[DEBUG] Procedimento 4 carregado: Tempo Médio = 0.500000, Número de Unidades = 2
+[DEBUG] Procedimento 5 carregado: Tempo Médio = 0.050000, Número de Unidades = 2
+[DEBUG] Evento retirado -> ID: 9600008, Tempo: 413909.00, Tempo de espera: -0.00, Estado: 1
+[DEBUG] Evento retirado -> ID: 9600009, Tempo: 413909.00, Tempo de espera: -0.00, Estado: 1
+[DEBUG] Evento retirado -> ID: 9600010, Tempo: 413909.00, Tempo de espera: -0.00, Estado: 1
+[DEBUG] Evento retirado -> ID: 9600011, Tempo: 413909.00, Tempo de espera: -0.00, Estado: 1
+[DEBUG] Evento retirado -> ID: 9600012, Tempo: 413909.00, Tempo de espera: -0.00, Estado: 1
+[DEBUG] Evento retirado -> ID: 9600008, Tempo: 413909.20, Tempo de espera: -0.00, Estado: 3
+[DEBUG] Evento retirado -> ID: 9600009, Tempo: 413909.20, Tempo de espera: -0.00, Estado: 3
+[DEBUG] Evento retirado -> ID: 9600010, Tempo: 413909.40, Tempo de espera: 0.20, Estado: 3
+[DEBUG] Evento retirado -> ID: 9600011, Tempo: 413909.40, Tempo de espera: 0.20, Estado: 3
+[DEBUG] Evento retirado -> ID: 9600012, Tempo: 413909.60, Tempo de espera: 0.40, Estado: 3
+[DEBUG] Evento retirado -> ID: 9600008, Tempo: 413909.70, Tempo de espera: -0.00, Estado: 5
+[DEBUG] Evento retirado -> ID: 9600009, Tempo: 413909.70, Tempo de espera: -0.00, Estado: 5
+[DEBUG] Evento retirado -> ID: 9600013, Tempo: 413910.00, Tempo de espera: -0.00, Estado: 1
+[DEBUG] Evento retirado -> ID: 9600015, Tempo: 413910.00, Tempo de espera: -0.00, Estado: 1
+[DEBUG] Evento retirado -> ID: 9600016, Tempo: 413910.00, Tempo de espera: -0.00, Estado: 1
+[DEBUG] Evento retirado -> ID: 9600009, Tempo: 413910.00, Tempo de espera: -0.00, Estado: 7
+[DEBUG] Evento retirado -> ID: 9600009, Tempo: 413910.05, Tempo de espera: -0.00, Estado: 9
+[DEBUG] Evento retirado -> ID: 9600010, Tempo: 413910.20, Tempo de espera: 0.50, Estado: 5
+[DEBUG] Evento retirado -> ID: 9600011, Tempo: 413910.20, Tempo de espera: 0.50, Estado: 5
+[DEBUG] Evento retirado -> ID: 9600013, Tempo: 413910.20, Tempo de espera: -0.00, Estado: 3
+[DEBUG] Evento retirado -> ID: 9600015, Tempo: 413910.20, Tempo de espera: -0.00, Estado: 3
+[DEBUG] Evento retirado -> ID: 9600008, Tempo: 413910.20, Tempo de espera: -0.00, Estado: 7
+[DEBUG] Evento retirado -> ID: 9600016, Tempo: 413910.40, Tempo de espera: 0.20, Estado: 3
+[DEBUG] Evento retirado -> ID: 9600010, Tempo: 413910.50, Tempo de espera: 0.50, Estado: 7
+[DEBUG] Evento retirado -> ID: 9600012, Tempo: 413910.70, Tempo de espera: 1.00, Estado: 5
+[DEBUG] Evento retirado -> ID: 9600013, Tempo: 413910.70, Tempo de espera: -0.00, Estado: 13
+[DEBUG] Evento retirado -> ID: 9600010, Tempo: 413910.70, Tempo de espera: 0.50, Estado: 9
+[DEBUG] Evento retirado -> ID: 9600017, Tempo: 413911.00, Tempo de espera: -0.00, Estado: 1
+[DEBUG] Evento retirado -> ID: 9600018, Tempo: 413911.00, Tempo de espera: -0.00, Estado: 1
+[DEBUG] Evento retirado -> ID: 9600012, Tempo: 413911.00, Tempo de espera: 1.00, Estado: 7
+[DEBUG] Evento retirado -> ID: 9600012, Tempo: 413911.10, Tempo de espera: 1.00, Estado: 9
+[DEBUG] Evento retirado -> ID: 9600015, Tempo: 413911.20, Tempo de espera: 0.50, Estado: 13
+[DEBUG] Evento retirado -> ID: 9600016, Tempo: 413911.20, Tempo de espera: 0.50, Estado: 5
+[DEBUG] Evento retirado -> ID: 9600017, Tempo: 413911.20, Tempo de espera: -0.00, Estado: 3
+[DEBUG] Evento retirado -> ID: 9600018, Tempo: 413911.20, Tempo de espera: -0.00, Estado: 3
+[DEBUG] Evento retirado -> ID: 9600017, Tempo: 413911.70, Tempo de espera: -0.00, Estado: 13
+[DEBUG] Evento retirado -> ID: 9600018, Tempo: 413911.70, Tempo de espera: -0.00, Estado: 5
+[DEBUG] Evento retirado -> ID: 9600010, Tempo: 413911.70, Tempo de espera: 0.50, Estado: 11
+[DEBUG] Evento retirado -> ID: 9600016, Tempo: 413911.70, Tempo de espera: 0.50, Estado: 7
+[DEBUG] Evento retirado -> ID: 9600011, Tempo: 413911.70, Tempo de espera: 0.50, Estado: 7
+[DEBUG] Evento retirado -> ID: 9600018, Tempo: 413911.90, Tempo de espera: -0.00, Estado: 7
+[DEBUG] Evento retirado -> ID: 9600010, Tempo: 413912.10, Tempo de espera: 0.50, Estado: 13
+[DEBUG] Evento retirado -> ID: 9600008, Tempo: 413912.35, Tempo de espera: -0.00, Estado: 9
+[DEBUG] Evento retirado -> ID: 9600016, Tempo: 413912.40, Tempo de espera: 0.50, Estado: 9
+[DEBUG] Evento retirado -> ID: 9600009, Tempo: 413912.55, Tempo de espera: -0.00, Estado: 11
+[DEBUG] Evento retirado -> ID: 9600018, Tempo: 413912.80, Tempo de espera: 0.50, Estado: 9
+[DEBUG] Evento retirado -> ID: 9600008, Tempo: 413913.55, Tempo de espera: 0.20, Estado: 11
+[DEBUG] Evento retirado -> ID: 9600009, Tempo: 413913.60, Tempo de espera: -0.00, Estado: 13
+[DEBUG] Evento retirado -> ID: 9600011, Tempo: 413913.75, Tempo de espera: 1.15, Estado: 9
+[DEBUG] Evento retirado -> ID: 9600016, Tempo: 413914.05, Tempo de espera: 1.65, Estado: 11
+[DEBUG] Evento retirado -> ID: 9600012, Tempo: 413915.20, Tempo de espera: 1.60, Estado: 11
+[DEBUG] Evento retirado -> ID: 9600016, Tempo: 413915.45, Tempo de espera: 1.65, Estado: 13
+[DEBUG] Evento retirado -> ID: 9600018, Tempo: 413915.55, Tempo de espera: 1.75, Estado: 11
+[DEBUG] Evento retirado -> ID: 9600012, Tempo: 413915.90, Tempo de espera: 1.85, Estado: 13
+[DEBUG] Evento retirado -> ID: 9600018, Tempo: 413916.45, Tempo de espera: 2.10, Estado: 13
+[DEBUG] Evento retirado -> ID: 9600011, Tempo: 413917.20, Tempo de espera: 2.60, Estado: 11
+[DEBUG] Evento retirado -> ID: 9600008, Tempo: 413919.05, Tempo de espera: 0.20, Estado: 13
+[DEBUG] Evento retirado -> ID: 9600011, Tempo: 413920.60, Tempo de espera: 2.60, Estado: 13
+9600008 Tue Mar  21 02:00:00 2017 Tue Mar  21 12:03:00 2017  10.05  9.85  0.20
+9600009 Tue Mar  21 02:00:00 2017 Tue Mar  21 06:36:00 2017  4.60  4.60  0.00
+9600010 Tue Mar  21 02:00:00 2017 Tue Mar  21 05:06:00 2017  3.10  2.60  0.50
+9600011 Tue Mar  21 02:00:00 2017 Tue Mar  21 13:36:00 2017  11.60  9.00  2.60
+9600012 Tue Mar  21 02:00:00 2017 Tue Mar  21 08:54:00 2017  6.90  5.05  1.85
+9600013 Tue Mar  21 03:00:00 2017 Tue Mar  21 03:42:00 2017  0.70  0.70  0.00
+9600015 Tue Mar  21 03:00:00 2017 Tue Mar  21 04:12:00 2017  1.20  0.70  0.50
+9600016 Tue Mar  21 03:00:00 2017 Tue Mar  21 08:27:00 2017  5.45  3.80  1.65
+9600017 Tue Mar  21 04:00:00 2017 Tue Mar  21 04:42:00 2017  0.70  0.70  0.00
+9600018 Tue Mar  21 04:00:00 2017 Tue Mar  21 09:27:00 2017  5.45  3.35  2.10
+Tempo de execução: 0.015625 segundos
