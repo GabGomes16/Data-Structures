@@ -1,0 +1,108 @@
+1.
+
+O problema no código é o vazamento de memória devido ao uso da função malloc dentro de um laço.
+
+____________________________________________________________________________________________________________________________________________________________________
+
+2. 
+
+Script started on 2024-11-19 15:24:16-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="197" LINES="8"]
+gcc -g -o c3 c3.c
+valgrind ./c3
+gdb ./c3
+exit]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ gcc -g -o c3 c3.c
+]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ valgrind ./c3
+==30051== Memcheck, a memory error detector
+==30051== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30051== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==30051== Command: ./c3
+==30051== 
+==30051== 
+==30051== HEAP SUMMARY:
+==30051==     in use at exit: 3,600 bytes in 9 blocks
+==30051==   total heap usage: 10 allocs, 1 frees, 4,000 bytes allocated
+==30051== 
+==30051== LEAK SUMMARY:
+==30051==    definitely lost: 3,600 bytes in 9 blocks
+==30051==    indirectly lost: 0 bytes in 0 blocks
+==30051==      possibly lost: 0 bytes in 0 blocks
+==30051==    still reachable: 0 bytes in 0 blocks
+==30051==         suppressed: 0 bytes in 0 blocks
+==30051== Rerun with --leak-check=full to see details of leaked memory
+==30051== 
+==30051== For lists of detected and suppressed errors, rerun with: -s
+==30051== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ gdb ./c3
+[35;1m[35;1mGNU gdb [m[35;1m(Ubuntu 9.2-0ubuntu1~20.04.2) [m[35;1m9.2[m[35;1m
+[m[mCopyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+[m--Type <RET> for more, q to quit, c to continue without paging--exitq
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+[m--Type <RET> for more, q to quit, c to continue without paging--q
+Quit
+]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ exit
+
+Script done on 2024-11-19 15:24:19-03:00 [COMMAND_EXIT_CODE="1"]
+
+____________________________________________________________________________________________________________________________________________________________________
+
+3.
+
+Para solucionar o malloc foi movido pra declaração da variável 'a', fora do loop.
+
+____________________________________________________________________________________________________________________________________________________________________
+
+4.
+
+
+Script started on 2024-11-19 15:31:24-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="197" LINES="8"]
+gcc -g -o c3correto c3correto.c
+valgrind ./c3correto
+gdb ./c3correto
+exit]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ gcc -g -o c3correto c3correto.c
+]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ valgrind ./c3correto
+==30349== Memcheck, a memory error detector
+==30349== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30349== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==30349== Command: ./c3correto
+==30349== 
+==30349== 
+==30349== HEAP SUMMARY:
+==30349==     in use at exit: 0 bytes in 0 blocks
+==30349==   total heap usage: 1 allocs, 1 frees, 400 bytes allocated
+==30349== 
+==30349== All heap blocks were freed -- no leaks are possible
+==30349== 
+==30349== For lists of detected and suppressed errors, rerun with: -s
+==30349== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ gdb ./c3correto
+[35;1m[35;1mGNU gdb [m[35;1m(Ubuntu 9.2-0ubuntu1~20.04.2) [m[35;1m9.2[m[35;1m
+[m[mCopyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+[m--Type <RET> for more, q to quit, c to continue without paging--exitq
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+[m--Type <RET> for more, q to quit, c to continue without paging--q
+Quit
+]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ exit
+
+Script done on 2024-11-19 15:31:28-03:00 [COMMAND_EXIT_CODE="1"]

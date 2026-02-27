@@ -1,0 +1,62 @@
+1.
+
+O problema do código é o loop infinito que aloca 128 bytes com malloc e nunca é liberado com free
+
+____________________________________________________________________________________________________________________________________________________________________
+
+2.
+
+Não dá pra compilar isso *-*
+
+____________________________________________________________________________________________________________________________________________________________________
+
+3.
+
+Pra concertar, o loop infinito foi removido.
+
+____________________________________________________________________________________________________________________________________________________________________
+
+4.
+
+Script started on 2024-11-19 22:25:58-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="197" LINES="8"]
+gcc -g -o c10correto c10correto.c
+valgrind ./c10correto
+gdb ./c10correto
+exit]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ gcc -g -o c10correto c10correto.c
+]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ valgrind ./c10correto
+==5620== Memcheck, a memory error detector
+==5620== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5620== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==5620== Command: ./c10correto
+==5620== 
+77951040
+==5620== 
+==5620== HEAP SUMMARY:
+==5620==     in use at exit: 0 bytes in 0 blocks
+==5620==   total heap usage: 2 allocs, 2 frees, 1,152 bytes allocated
+==5620== 
+==5620== All heap blocks were freed -- no leaks are possible
+==5620== 
+==5620== For lists of detected and suppressed errors, rerun with: -s
+==5620== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ gdb ./c10correto
+[35;1m[35;1mGNU gdb [m[35;1m(Ubuntu 9.2-0ubuntu1~20.04.2) [m[35;1m9.2[m[35;1m
+[m[mCopyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+[m--Type <RET> for more, q to quit, c to continue without paging--exitq
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+[m--Type <RET> for more, q to quit, c to continue without paging--q
+Quit
+]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ exit
+
+Script done on 2024-11-19 22:26:03-03:00 [COMMAND_EXIT_CODE="1"]

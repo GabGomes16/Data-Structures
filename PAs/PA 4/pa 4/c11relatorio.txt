@@ -1,0 +1,141 @@
+1.
+
+O código contém comportamento indefinido devido a um problema de buffer overflow
+
+____________________________________________________________________________________________________________________________________________________________________
+
+2.
+
+Script started on 2024-11-19 22:26:58-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="187" LINES="7"]
+gcc -g -o c11 c11.c
+valgrind ./c11
+gdb ./c11
+exit]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ gcc -g -o c11 c11.c
+]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ valgrind ./c11
+==5806== Memcheck, a memory error detector
+==5806== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5806== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==5806== Command: ./c11
+==5806== 
+==5806== Invalid write of size 2
+==5806==    at 0x1091B4: main (c11.c:9)
+==5806==  Address 0x4a57048 is 0 bytes after a block of size 8 alloc'd
+==5806==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5806==    by 0x10919E: main (c11.c:8)
+==5806== 
+==5806== Invalid read of size 1
+==5806==    at 0x483EF54: strlen (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5806==    by 0x48DAD14: __vfprintf_internal (vfprintf-internal.c:1688)
+==5806==    by 0x48C3D3E: printf (printf.c:33)
+==5806==    by 0x1091DF: main (c11.c:11)
+==5806==  Address 0x4a57048 is 0 bytes after a block of size 8 alloc'd
+==5806==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5806==    by 0x10919E: main (c11.c:8)
+==5806== 
+==5806== Invalid read of size 1
+==5806==    at 0x48F170C: _IO_new_file_xsputn (fileops.c:1219)
+==5806==    by 0x48F170C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==5806==    by 0x48D90FB: __vfprintf_internal (vfprintf-internal.c:1688)
+==5806==    by 0x48C3D3E: printf (printf.c:33)
+==5806==    by 0x1091DF: main (c11.c:11)
+==5806==  Address 0x4a57048 is 0 bytes after a block of size 8 alloc'd
+==5806==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5806==    by 0x10919E: main (c11.c:8)
+==5806== 
+==5806== Invalid read of size 1
+==5806==    at 0x48436A0: mempcpy (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5806==    by 0x48F1631: _IO_new_file_xsputn (fileops.c:1236)
+==5806==    by 0x48F1631: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==5806==    by 0x48D90FB: __vfprintf_internal (vfprintf-internal.c:1688)
+==5806==    by 0x48C3D3E: printf (printf.c:33)
+==5806==    by 0x1091DF: main (c11.c:11)
+==5806==  Address 0x4a57048 is 0 bytes after a block of size 8 alloc'd
+==5806==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5806==    by 0x10919E: main (c11.c:8)
+==5806== 
+5806, Rolberton
+==5806== 
+==5806== HEAP SUMMARY:
+==5806==     in use at exit: 8 bytes in 1 blocks
+==5806==   total heap usage: 2 allocs, 1 frees, 1,032 bytes allocated
+==5806== 
+==5806== LEAK SUMMARY:
+==5806==    definitely lost: 8 bytes in 1 blocks
+==5806==    indirectly lost: 0 bytes in 0 blocks
+==5806==      possibly lost: 0 bytes in 0 blocks
+==5806==    still reachable: 0 bytes in 0 blocks
+==5806==         suppressed: 0 bytes in 0 blocks
+==5806== Rerun with --leak-check=full to see details of leaked memory
+==5806== 
+==5806== For lists of detected and suppressed errors, rerun with: -s
+==5806== ERROR SUMMARY: 6 errors from 4 contexts (suppressed: 0 from 0)
+]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ gdb ./c11
+[35;1m[35;1mGNU gdb [m[35;1m(Ubuntu 9.2-0ubuntu1~20.04.2) [m[35;1m9.2[m[35;1m
+[m[mCopyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+[m--Type <RET> for more, q to quit, c to continue without paging--exitq
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+[m--Type <RET> for more, q to quit, c to continue without paging--q
+Quit
+]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ exit
+
+Script done on 2024-11-19 22:27:17-03:00 [COMMAND_EXIT_CODE="1"]
+
+____________________________________________________________________________________________________________________________________________________________________
+
+3.
+
+Foi corrigida a alocação de memória
+
+____________________________________________________________________________________________________________________________________________________________________
+
+4.
+
+Script started on 2024-11-19 22:30:23-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="187" LINES="7"]
+gcc -g -o c11correto c11correto.c
+valgrind ./c11correto
+gdb ./c11correto
+exit]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ gcc -g -o c11correto c11correto.c
+]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ valgrind ./c11correto
+==6097== Memcheck, a memory error detector
+==6097== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6097== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6097== Command: ./c11correto
+==6097== 
+6097, Rolberton
+==6097== 
+==6097== HEAP SUMMARY:
+==6097==     in use at exit: 0 bytes in 0 blocks
+==6097==   total heap usage: 2 allocs, 2 frees, 1,034 bytes allocated
+==6097== 
+==6097== All heap blocks were freed -- no leaks are possible
+==6097== 
+==6097== For lists of detected and suppressed errors, rerun with: -s
+==6097== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ gdb ./c11correto
+[35;1m[35;1mGNU gdb [m[35;1m(Ubuntu 9.2-0ubuntu1~20.04.2) [m[35;1m9.2[m[35;1m
+[m[mCopyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+[m--Type <RET> for more, q to quit, c to continue without paging--exitq
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+[m--Type <RET> for more, q to quit, c to continue without paging--q
+Quit
+]0;biel@Familia-Vostro-3470: ~/Área de Trabalho/ED/PA4[01;32mbiel@Familia-Vostro-3470[00m:[01;34m~/Área de Trabalho/ED/PA4[00m$ exit
+
+Script done on 2024-11-19 22:30:27-03:00 [COMMAND_EXIT_CODE="1"]
